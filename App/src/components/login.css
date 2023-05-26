@@ -1,0 +1,117 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-image: url('../../public/Vive\ tu\ experiencia\ con\ aiesec.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.input {
+  font-size: 1rem;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #ccc;
+  width: 300px;
+}
+
+.button {
+  font-size: 1rem;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 20px 0;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.input-label {
+  font-size: 1rem;
+  margin-top: 20px;
+  color: #333;
+  text-align: left;
+  width: 300px;
+}
+
+.input::placeholder {
+  font-style: italic;
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.loading-spinner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.spinner {
+  border: 8px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #1e90ff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.device-info {
+  font-size: 12px;
+  margin-top: 10px;
+  text-align: center;
+  color: #fff;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  padding: 5px;
+  background-color: #000;
+}
+
+.error-mesage {
+  margin-top: 10px;
+  text-align: center;
+  color: #fff;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  padding: 5px;
+  background-color: #000;
+}
+
